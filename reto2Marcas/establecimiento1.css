@@ -1,0 +1,157 @@
+iframe{
+	
+	padding-left: 34%;
+	padding-right: 30%;
+	border:0;
+	
+}
+.texto{
+	
+	width: 50%;
+	padding: 2%;
+	
+}
+label{
+	
+	color: white;
+	
+}
+
+ div{
+	
+	padding-top: 20;
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-bottom: 5%;
+	background-image: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),url("../Imagenes/lastcity.jpg");
+	background-attachment:fixed;
+	
+	
+ }
+ body{
+	background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),url("../Imagenes/shadowkeep.jpg");
+	background-attachment:fixed;
+	 
+ }
+.navegacion{
+		
+	width:600px;
+	margin: 30px auto;
+	background: #fff;
+}
+.navegacion ul{
+	
+	list-style: none;
+}
+.menu > li{
+	
+	display: inline-block;
+	
+}
+.menu > li > a{
+	
+	display: block;
+	padding: 15px 40px;
+	color: #353535;
+	font-family: 'Open sans';
+	text-decoration: none;
+	
+}
+.menu li a:hover{
+	
+	background-color: black;
+	color: white;
+	
+}
+.titulo{
+		
+	color:white;
+	text-align:center;
+	font-size: 50px;
+	padding-bottom: 5%;
+	
+}
+.video{
+	
+	float: right;
+	
+}
+.subtitulo{
+	
+	font-size: 50px;
+	padding-bottom: 5%;
+	text-align:center;
+	color:white;
+	
+}
+.li{
+	
+	list-style-type:none;
+    position:relative;
+    width:120px;
+}
+                
+.li a{
+	
+    text-decoration:none;
+    display:inline-block;
+    padding:5px 10px;
+    width:120px;
+    height:30px;
+    border:1px solid #000;
+    color:#fff;
+    background-color:#000;
+	
+}
+            
+.li a:hover{
+    color:#000;
+    background-color:#fff;
+                
+}
+    
+.nav li ul{
+        display:none;
+        position:absolute;
+        top:0px;
+        left:120px;
+}
+p{
+	
+	color: white;
+	font-size: 18px;
+	
+}
+.formulario{
+	
+	text-align: center;
+	
+}
+.imagen{
+	
+	padding-top: 5%;
+	padding-left: 10%;
+	padding-bottom: 5%;
+	width:600px;
+
+	
+}
+.comilla{
+	
+	font-size: 20px;
+	font-weight: bold;
+	
+}
+.p{
+	
+	text-align:center;
+	
+}
+nav li:hover ul{display:block;}
