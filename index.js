@@ -1,8 +1,52 @@
-const express = require('express');
-const app = express();
+const http = require('http');
+const fs = require('fs');
+const path = require('path');
+const port = process.env.PORT || 2100;
 
-app.use(express.static(__dirname + '/public/'));
+const server = http.createServer((req, res) => {
+    let filePath = path.join(
+        __dirname,
+        "/",
+        req.url === "/" ? "portada.html" : req.url
+    );
 
-app.listen('3000', function() {
-  console.log('Servidor web escuchando en el puerto 3000');
+    let extName = path.extname(filePath);
+    let contentType = 'text/html';
+
+    switch (extName) {
+        case '.css':
+            contentType = 'text/css';
+            break;
+        case '.js':
+            contentType = 'text/javascript';
+            break;
+        case '.json':
+            contentType = 'application/json';
+            break;
+        case '.png':
+            contentType = 'image/png';
+            break;
+        case '.jpg':
+            contentType = 'image/jpg';
+            break;
+        case '.ico':
+            contentType = 'image/ico';
+            break;
+    }
+
+    console.log('File path: ${filePath}');
+    console.log('Content-Type: ${contentType}')
+
+    res.writeHead(200, {'Content-Type': contentType});
+
+    const readStream = fs.createReadStream(filePath);
+    readStream.pipe(res);
+});
+
+server.listen(port, (err) => {
+    if (err) {
+        console.log('Error: ${err}')
+    } else {
+        console.log('Server listening at port ${port}...');
+    }
 });
