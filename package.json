@@ -1,0 +1,22 @@
+{
+  "name": "reto2-guillermo-jon",
+  "version": "1.0.0",
+  "description": "\"Reto 2 Guille-Jon\"",
+  "main": "Portada.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/infabeti/Reto2-Guillermo-Jon.git"
+  },
+  "author": "Guille-Jon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/infabeti/Reto2-Guillermo-Jon/issues"
+  },
+  "homepage": "https://github.com/infabeti/Reto2-Guillermo-Jon#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
