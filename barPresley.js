@@ -131,25 +131,25 @@ function agregar_carrito(){
 
 		document.getElementById("carrito").setText("cafe x" + cafe);
 
-	}else if(tortilla > 0)
+	}else if(tortilla > 0){
 
+		document.getElementById("carrito").setText("tortilla x" + tortilla);
 
+	}else if(desayuno > 0){
 
-	}else if(desayuno > 0)
+		document.getElementById("carrito").setText("desayuno x" + desayuno);
 
-	
+	}else if(sandwich > 0){
 
-	}else if(sandwich > 0)
+		document.getElementById("carrito").setText("sandwich x" + sandwich);
 
-	
+	}else if(pintxos > 0){
 
-	}else if(pintxos > 0)
+		document.getElementById("carrito").setText("pintxos x" + pintxos);
 
-	
+	}else if(empanada > 0){
 
-	}else if(empanada > 0)
-
-	
+		document.getElementById("carrito").setText("empanada x" + empanada);
 
 	}				
 
