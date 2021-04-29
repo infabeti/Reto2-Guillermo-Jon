@@ -129,7 +129,7 @@ function agregar_carrito(){
 
 	if(cafe > 0){
 
-		document.getElementById("carrito").setText("cafe x" + cafe);
+		document.getElementById("carrito").setText("cafe x" + cafe "\n");
 
 	}else if(tortilla > 0){
 
