@@ -117,3 +117,40 @@ function restar5(){
 	document.getElementById("id5").value = contador;
 
 }
+
+function agregar_carrito(){
+
+	var cafe = parseInt(document.getElementById("id5").value);
+	var tortilla = parseInt(document.getElementById("id1").value);
+	var desayuno = parseInt(document.getElementById("id2").value);
+	var sandwich = parseInt(document.getElementById("id3").value);
+	var pintxos = parseInt(document.getElementById("id4").value);
+	var empanada = parseInt(document.getElementById("id5").value);
+
+	if(cafe > 0){
+
+		document.getElementById("carrito").setText("cafe x" + cafe);
+
+	}else if(tortilla > 0)
+
+
+
+	}else if(desayuno > 0)
+
+	
+
+	}else if(sandwich > 0)
+
+	
+
+	}else if(pintxos > 0)
+
+	
+
+	}else if(empanada > 0)
+
+	
+
+	}				
+
+}
